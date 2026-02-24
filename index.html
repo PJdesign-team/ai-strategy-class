@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAUL 導演：AI 商業策略班 | 帶得走的具體成果</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Noto Sans TC (內文) & Playfair Display (標題點綴) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    },
+                    colors: {
+                        gold: {
+                            400: '#FBBF24',
+                            500: '#F59E0B',
+                            600: '#D97706',
+                            700: '#B45309',
+                        },
+                        dark: {
+                            900: '#0A0A0B',
+                            800: '#18181B',
+                            700: '#27272A',
+                        }
+                    },
+                    backgroundImage: {
+                        'cinematic-gradient': 'linear-gradient(to bottom right, #0A0A0B, #18181B)',
+                        'gold-gradient': 'linear-gradient(135deg, #F59E0B 0%, #B45309 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0B;
+            color: #F4F4F5;
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+        }
+        .box-glow {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+        }
+        .glass-panel {
+            background: rgba(24, 24, 27, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(245, 158, 11, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold-500 selection:text-dark-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel border-b border-white/5 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i class="ph ph-film-strip text-gold-500 text-3xl"></i>
+                    <span class="font-bold text-xl tracking-wider">PAUL<span class="text-gold-500 font-serif italic ml-1">Director</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+                    <a href="#core" class="hover:text-gold-400 transition-colors">課程核心</a>
+                    <a href="#workflow" class="hover:text-gold-400 transition-colors">五小時流程</a>
+                    <a href="#solution" class="hover:text-gold-400 transition-colors">痛點解決</a>
+                </div>
+                <a href="#pricing" class="px-6 py-2.5 rounded-full bg-gold-gradient text-white font-bold text-sm tracking-wide hover:shadow-[0_0_15px_rgba(245,158,11,0.5)] transition-all transform hover:scale-105">
+                    立即卡位
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=2056&auto=format&fit=crop" alt="" class="w-full h-full object-cover opacity-20">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark-900/80 via-dark-900/95 to-dark-900"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-400 text-sm font-medium mb-8">
+                <i class="ph-fill ph-sparkle"></i>
+                全新內容升級・從「教學」轉向「資產產出」
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-tight">
+                AI 商業策略班 <br class="hidden md:block">
+                <span class="text-transparent bg-clip-text bg-gold-gradient text-glow">拒絕空談，帶走資產</span>
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto font-light leading-relaxed mb-12">
+                25年品牌導演視野 × Google Gemini × NotebookLM<br>
+                即便你沒有巨大名氣，也能用「帶得走的具體成果」讓客戶感到物超所值。
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#pricing" class="px-8 py-4 rounded-full bg-gold-gradient text-white font-bold text-lg tracking-wide hover:shadow-[0_0_20px_rgba(245,158,11,0.6)] transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2">
+                    查看第一梯次資訊 <i class="ph-bold ph-arrow-right"></i>
+                </a>
+                <a href="#value" class="px-8 py-4 rounded-full border border-gray-600 hover:border-gold-500 hover:text-gold-400 bg-dark-800/50 backdrop-blur-sm text-gray-300 font-bold text-lg transition-all flex items-center justify-center gap-2">
+                    探索最硬核收穫
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Director's Value (Core Takeaways) -->
+    <section id="value" class="py-20 bg-dark-900 relative border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 font-serif italic text-gray-200">The Director's Cut</h2>
+                <div class="h-1 w-20 bg-gold-500 mx-auto rounded-full"></div>
+                <p class="mt-6 text-gray-400 text-lg">這 8,800 元最硬核的價值，是你下課時手中緊握的三大資產</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Asset 1 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-gold-500/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="ph-fill ph-brain text-8xl text-gold-500"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-full bg-dark-800 border border-gold-500/30 flex items-center justify-center mb-6 text-gold-400 group-hover:scale-110 transition-transform">
+                        <i class="ph-bold ph-brain text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">調教好的 AI 大腦</h3>
+                    <p class="text-gold-400 font-medium mb-4">NotebookLM 專屬數據庫</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        不再對著空白輸入框發呆。你將帶走一個灌入你產業知識與對標對象，隨時為你提供精準見解的專屬 AI 智囊。
+                    </p>
+                </div>
+                <!-- Asset 2 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-gold-500/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="ph-fill ph-image text-8xl text-gold-500"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-full bg-dark-800 border border-gold-500/30 flex items-center justify-center mb-6 text-gold-400 group-hover:scale-110 transition-transform">
+                        <i class="ph-bold ph-image text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">國際質感的代表作</h3>
+                    <p class="text-gold-400 font-medium mb-4">電影級策略圖文內容</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        融合 25 年品牌導演的美學視野，透過 Gemini 視覺指令，現場產出一篇讓客戶驚豔、具備高階商務質感的成名作。
+                    </p>
+                </div>
+                <!-- Asset 3 -->
+                <div class="glass-panel p-8 rounded-2xl hover:border-gold-500/50 transition-colors group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="ph-fill ph-magnet text-8xl text-gold-500"></i>
+                    </div>
+                    <div class="w-14 h-14 rounded-full bg-dark-800 border border-gold-500/30 flex items-center justify-center mb-6 text-gold-400 group-hover:scale-110 transition-transform">
+                        <i class="ph-bold ph-crosshair text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white">明天就能用的獲客模板</h3>
+                    <p class="text-gold-400 font-medium mb-4">轉單邏輯與診斷誘餌</p>
+                    <p class="text-gray-400 leading-relaxed">
+                        一套經市場驗證、可直接填空的「轉單邏輯腳本」與「自我檢測表」，用專業度直接與客戶建立信任，名氣不再是唯一門檻。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Positioning -->
+    <section id="core" class="py-20 bg-dark-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">不僅是教學，更是<span class="text-gold-500">商業級工作流</span></h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        市場上的 AI 課程都在教你「怎麼下 Prompt」，但我們教你的是「怎麼把 AI 變成你的賺錢資產」。我們拒絕單純的指令背誦，強調的是<strong class="text-white">當場演練、馬上有用</strong>。
+                    </p>
+                    
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-gold-500/20 flex items-center justify-center shrink-0 border border-gold-500/30">
+                                <i class="ph-bold ph-video-camera text-gold-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-1">25 年品牌導演視野</h4>
+                                <p class="text-gray-400">不只是產出內容，而是產出「有質感、有策略」的高階品牌內容，讓你的專業度瞬間升維。</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-gold-500/20 flex items-center justify-center shrink-0 border border-gold-500/30">
+                                <i class="ph-bold ph-users-three text-gold-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-1">5 人小班制 ＋ 顧問級陪跑</h4>
+                                <p class="text-gray-400">1 位導演主講，2 位助教隨側。保證每一位學員都能被照顧到，確保你能獨立操作並產出成果，建立極強的安全感。</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gold-500/20 blur-3xl rounded-full"></div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="" class="relative rounded-2xl shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-700">
+                    
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-dark-900 border border-gold-500/50 p-6 rounded-xl shadow-2xl box-glow">
+                        <div class="text-3xl font-black text-gold-500 mb-1">100%</div>
+                        <div class="text-sm text-gray-300 font-medium">保證實作產出成果</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5-Hour Workflow -->
+    <section id="workflow" class="py-24 bg-dark-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-gold-500 font-bold tracking-wider text-sm uppercase">The 5-Hour Sprint</span>
+                <h2 class="text-3xl md:text-5xl font-black mt-2 mb-6">五小時「彎道超車」流程</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">從邏輯建立到精準落地，每一小時都為你累積一項具體資產。</p>
+            </div>
+
+            <div class="relative">
+                <!-- Vertical Line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-px h-full bg-gradient-to-b from-gold-500/50 via-gray-700 to-transparent"></div>
+
+                <div class="space-y-12 relative">
+                    <!-- Hour 1 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full gap-8 group">
+                        <div class="md:w-5/12 text-right order-2 md:order-1 glass-panel p-6 rounded-2xl hover:border-gold-500/50 transition-all hover:-translate-y-1 z-10">
+                            <span class="text-blue-400 text-sm font-bold tracking-wider mb-2 block">核心工具：Google Gemini</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">市場偵查</h3>
+                            <p class="text-gray-400 mb-4">不再憑空想像，透過 AI 快速掃描市場，找出別人沒注意到的機會點。</p>
+                            <div class="bg-dark-800/80 p-3 rounded-lg border border-gray-700 inline-block text-left">
+                                <span class="text-xs text-gray-500 block mb-1">帶走的資產：</span>
+                                <span class="text-gold-400 font-medium">一份過濾虛榮指標後的「隱形冠軍」學習名單</span>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 w-12 h-12 rounded-full bg-dark-900 border-2 border-gold-500 flex items-center justify-center text-gold-500 font-bold z-10 box-glow shadow-gold-500/30">
+                            H1
+                        </div>
+                        <div class="md:w-5/12 order-3"></div>
+                    </div>
+
+                    <!-- Hour 2 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full gap-8 group">
+                        <div class="md:w-5/12 order-2 md:order-1"></div>
+                        <div class="order-1 md:order-2 w-12 h-12 rounded-full bg-dark-900 border-2 border-gold-500 flex items-center justify-center text-gold-500 font-bold z-10 box-glow shadow-gold-500/30">
+                            H2
+                        </div>
+                        <div class="md:w-5/12 text-left order-3 glass-panel p-6 rounded-2xl hover:border-gold-500/50 transition-all hover:-translate-y-1 z-10">
+                            <span class="text-purple-400 text-sm font-bold tracking-wider mb-2 block">核心工具：NotebookLM</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">精準鎖定</h3>
+                            <p class="text-gray-400 mb-4">將龐雜資訊轉化為專屬知識庫，確立你的市場定位與學習楷模。</p>
+                            <div class="bg-dark-800/80 p-3 rounded-lg border border-gray-700 inline-block">
+                                <span class="text-xs text-gray-500 block mb-1">帶走的資產：</span>
+                                <span class="text-gold-400 font-medium">建立個人專屬對標數據庫，鎖定唯一高價值導師</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hour 3 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full gap-8 group">
+                        <div class="md:w-5/12 text-right order-2 md:order-1 glass-panel p-6 rounded-2xl hover:border-gold-500/50 transition-all hover:-translate-y-1 z-10">
+                            <span class="text-purple-400 text-sm font-bold tracking-wider mb-2 block">核心工具：NotebookLM</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">邏輯拆解</h3>
+                            <p class="text-gray-400 mb-4">解構成功案例背後的商業邏輯，化為你可以直接套用的框架。</p>
+                            <div class="bg-dark-800/80 p-3 rounded-lg border border-gray-700 inline-block text-left">
+                                <span class="text-xs text-gray-500 block mb-1">帶走的資產：</span>
+                                <span class="text-gold-400 font-medium">一套經市場驗證、可直接填空的「轉單邏輯腳本」</span>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 w-12 h-12 rounded-full bg-dark-900 border-2 border-gold-500 flex items-center justify-center text-gold-500 font-bold z-10 box-glow shadow-gold-500/30">
+                            H3
+                        </div>
+                        <div class="md:w-5/12 order-3"></div>
+                    </div>
+
+                    <!-- Hour 4 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full gap-8 group">
+                        <div class="md:w-5/12 order-2 md:order-1"></div>
+                        <div class="order-1 md:order-2 w-12 h-12 rounded-full bg-dark-900 border-2 border-gold-500 flex items-center justify-center text-gold-500 font-bold z-10 box-glow shadow-gold-500/30">
+                            H4
+                        </div>
+                        <div class="md:w-5/12 text-left order-3 glass-panel p-6 rounded-2xl hover:border-gold-500/50 transition-all hover:-translate-y-1 z-10">
+                            <span class="text-blue-400 text-sm font-bold tracking-wider mb-2 block">核心工具：Gemini 視覺指令</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">升維超越</h3>
+                            <p class="text-gray-400 mb-4">注入 25 年導演視覺美學，讓你的內容質感瞬間超越同業，建立高級品牌感。</p>
+                            <div class="bg-dark-800/80 p-3 rounded-lg border border-gray-700 inline-block">
+                                <span class="text-xs text-gray-500 block mb-1">帶走的資產：</span>
+                                <span class="text-gold-400 font-medium">一篇具備「電影級策略」質感的高階圖文內容</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hour 5 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full gap-8 group">
+                        <div class="md:w-5/12 text-right order-2 md:order-1 glass-panel p-6 rounded-2xl border-gold-500/40 shadow-[0_0_20px_rgba(245,158,11,0.1)] hover:border-gold-500 transition-all hover:-translate-y-1 z-10">
+                            <span class="text-gold-500 text-sm font-bold tracking-wider mb-2 block">核心工具：名單轉換指令</span>
+                            <h3 class="text-2xl font-bold text-white mb-3">精準落地 (優化)</h3>
+                            <p class="text-gray-400 mb-4">最終化為行動！將所學直接產出為可發布的內容，終結「回家就不會做」的焦慮。</p>
+                            <div class="bg-gold-500/10 p-4 rounded-lg border border-gold-500/30 inline-block text-left">
+                                <span class="text-xs text-gold-200 block mb-1">帶走的終極資產：</span>
+                                <span class="text-gold-400 font-bold text-lg">一件「診斷式獲客誘餌」</span><br>
+                                <span class="text-sm text-gray-300">讓學員現場發布首篇專業文章</span>
+                            </div>
+                        </div>
+                        <div class="order-1 md:order-2 w-14 h-14 rounded-full bg-gold-gradient flex items-center justify-center text-dark-900 font-black text-xl z-10 shadow-[0_0_20px_rgba(245,158,11,0.6)]">
+                            H5
+                        </div>
+                        <div class="md:w-5/12 order-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points & Solutions -->
+    <section id="solution" class="py-20 bg-dark-800 relative overflow-hidden">
+        <!-- Decorative bg -->
+        <div class="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">沒有名氣？程度初階？<span class="text-gold-500">這都不是問題。</span></h2>
+                <p class="text-gray-400 text-lg">我們特別為消除焦慮而設計的「低門檻、高品質」單點突破機制。</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Solution 1 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 relative">
+                    <div class="absolute -top-4 -left-4 w-12 h-12 bg-dark-800 border border-gray-600 rounded-full flex items-center justify-center text-xl text-gray-400 font-bold">1</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">用「專業」取代「名氣」</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        不再盲目追求廣大流量。我們改求「精準診斷」。你將在課堂上製作出一份專屬的<strong class="text-gold-400">「自我檢測表」</strong>，用扎實的專業度直接與潛在客戶建立信任，讓精準名單自動找上門。
+                    </p>
+                    <div class="flex items-center gap-3 text-sm text-gray-500">
+                        <i class="ph-fill ph-check-circle text-gold-500 text-xl"></i>
+                        <span>不需網紅光環，素人也能展現專家架勢</span>
+                    </div>
+                </div>
+
+                <!-- Solution 2 -->
+                <div class="bg-dark-900 border border-white/5 rounded-2xl p-8 relative">
+                    <div class="absolute -top-4 -left-4 w-12 h-12 bg-dark-800 border border-gray-600 rounded-full flex items-center justify-center text-xl text-gray-400 font-bold">2</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">「填空式」教學法</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        聽不懂複雜的 AI 術語？沒關係。我們將所有複雜指令簡化為<strong class="text-gold-400">「填空模板」</strong>。確保即使是 AI 初學者，也能穩定產出與 25 年導演視野水平一致的高質感內容。
+                    </p>
+                    <div class="flex items-center gap-3 text-sm text-gray-500">
+                        <i class="ph-fill ph-check-circle text-gold-500 text-xl"></i>
+                        <span>下課前必定完成一篇「成名作」，消滅科技焦慮</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Registration CTA -->
+    <section id="pricing" class="py-24 bg-dark-900 relative border-t border-white/5">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-panel rounded-3xl p-8 md:p-12 border-gold-500/30 relative overflow-hidden box-glow">
+                <!-- Decorative flare -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-gold-500/20 blur-[80px] rounded-full"></div>
+                
+                <div class="relative z-10">
+                    <div class="text-center mb-10">
+                        <h2 class="text-3xl md:text-5xl font-black mb-4">第一梯次・限量席次</h2>
+                        <p class="text-xl text-gold-400 font-medium">建立信任閉環，投資你未來的商務獲客系統</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-dark-800 flex items-center justify-center border border-gray-700 shrink-0">
+                                    <i class="ph ph-calendar-blank text-2xl text-gold-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400 mb-1">日期時間</p>
+                                    <p class="text-lg font-bold text-white">3/3 (二) 10:00 - 16:00</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-dark-800 flex items-center justify-center border border-gray-700 shrink-0">
+                                    <i class="ph ph-map-pin text-2xl text-gold-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400 mb-1">上課地點</p>
+                                    <p class="text-lg font-bold text-white">松山區專用教室</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-dark-800 flex items-center justify-center border border-gray-700 shrink-0">
+                                    <i class="ph ph-users-three text-2xl text-gold-500"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400 mb-1">極致精緻</p>
+                                    <p class="text-lg font-bold text-white">5人小班制 + 2位助教陪跑</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-dark-800 rounded-2xl p-8 border border-gray-700 text-center relative">
+                            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gold-500 text-dark-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                                最高投資報酬
+                            </div>
+                            <p class="text-gray-400 mb-2 font-medium">專案特惠價</p>
+                            <div class="flex items-end justify-center gap-1 mb-4">
+                                <span class="text-2xl text-gold-500 font-bold">NT$</span>
+                                <span class="text-5xl md:text-6xl font-black text-white">8,800</span>
+                            </div>
+                            <p class="text-sm text-green-400 font-medium mb-6 flex items-center justify-center gap-1">
+                                <i class="ph-fill ph-check-circle"></i> 包含免費複訓資格
+                            </p>
+                            
+                            <!-- Dummy button for display -->
+                            <button onclick="alert('感謝您的點擊！實務上這裡將連結至您的結帳/報名系統 (如 ACCUPASS, 綠界等)。')" class="w-full py-4 rounded-xl bg-gold-gradient text-white font-bold text-lg hover:shadow-[0_0_20px_rgba(245,158,11,0.5)] transition-all transform hover:-translate-y-1">
+                                立即預約席次
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-sm text-gray-500">
+                            「一張國際質感的代表作、一套明天就能用的獲客模板」<br>
+                            名額極限 5 名，額滿即關閉表單。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 border-t border-white/5 py-8 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <i class="ph ph-film-strip text-gray-500 text-2xl"></i>
+                <span class="font-bold text-lg tracking-wider text-gray-500">PAUL<span class="font-serif italic ml-1">Director</span></span>
+            </div>
+            <p class="text-gray-600 text-sm">
+                &copy; 2026 PAUL 導演：AI 商業策略班. All rights reserved. <br>
+                Empowered by Google Gemini & NotebookLM
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
